@@ -1,0 +1,8 @@
+T:\SeminarPAW_HT\Seminar2_1061\Seminar2_1061\bin\Debug\Seminar2_1061.exe.config
+T:\SeminarPAW_HT\Seminar2_1061\Seminar2_1061\bin\Debug\Seminar2_1061.exe
+T:\SeminarPAW_HT\Seminar2_1061\Seminar2_1061\bin\Debug\Seminar2_1061.pdb
+T:\SeminarPAW_HT\Seminar2_1061\Seminar2_1061\obj\Debug\Seminar2_1061.csproj.AssemblyReference.cache
+T:\SeminarPAW_HT\Seminar2_1061\Seminar2_1061\obj\Debug\Seminar2_1061.csproj.CoreCompileInputs.cache
+T:\SeminarPAW_HT\Seminar2_1061\Seminar2_1061\obj\Debug\Seminar2_1061.exe
+T:\SeminarPAW_HT\Seminar2_1061\Seminar2_1061\obj\Debug\Seminar2_1061.pdb
+T:\SeminarPAW_HT\Seminar2_1061\Seminar2_1061\obj\Debug\Seminar2_1061.exe.config
