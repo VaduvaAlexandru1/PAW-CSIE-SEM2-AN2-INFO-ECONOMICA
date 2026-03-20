@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Seminar4_1061
+{
+    internal class StudentValidareException : Exception
+    {
+        public StudentValidareException(string message) : base(message) { }
+    }
+}
