@@ -99,18 +99,14 @@ namespace Subiect1Persoana
         private void txtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "Fisiere txt|*.txt";
-            if (sfd.ShowDialog() == DialogResult.OK) {
-                using (StreamWriter sw = new StreamWriter(sfd.FileName))
+            sfd.Filter = "Fisiere TXT|*.txt";
+            using (StreamWriter sw = new StreamWriter(sfd.FileName))
+            {
+                foreach(Student s in studenti)
                 {
-                    foreach (Student s in studenti)
-                    {
-                        sw.WriteLine($"{s.Nume}|{s.Prenume}|{s.Varsta}|{s.Medie}|{string.Join(",", s.Materii)}");
-                    }
+                    sw.WriteLine($"{s.Nume}|{s.Prenume}|{s.Varsta}|{s.Medie}|{string.Join(",", s.Materii)}");
                 }
-                    
             }
-            MessageBox.Show("Salvat");
         }
 
         private void txtToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -138,6 +134,22 @@ namespace Subiect1Persoana
             }
 
             MessageBox.Show("Import realizat");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+
+            foreach (Student student in studenti) { 
+                ListViewItem item = new ListViewItem();
+
+                item.SubItems.Add(student.Nume + " " + student.Prenume);
+                item.SubItems.Add(student.Varsta.ToString());
+                item.SubItems.Add(student.Medie.ToString());
+                item.SubItems.Add(string.Join(", ", student.Materii));
+
+                listView1.Items.Add(item);
+            }
         }
     }
 }

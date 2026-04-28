@@ -45,10 +45,17 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.binToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.binToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button3 = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.Matricol = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,9 +196,16 @@
             // binToolStripMenuItem
             // 
             this.binToolStripMenuItem.Name = "binToolStripMenuItem";
-            this.binToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.binToolStripMenuItem.Size = new System.Drawing.Size(91, 22);
             this.binToolStripMenuItem.Text = "bin";
             this.binToolStripMenuItem.Click += new System.EventHandler(this.binToolStripMenuItem_Click);
+            // 
+            // txtToolStripMenuItem
+            // 
+            this.txtToolStripMenuItem.Name = "txtToolStripMenuItem";
+            this.txtToolStripMenuItem.Size = new System.Drawing.Size(91, 22);
+            this.txtToolStripMenuItem.Text = "txt";
+            this.txtToolStripMenuItem.Click += new System.EventHandler(this.txtToolStripMenuItem_Click);
             // 
             // importToolStripMenuItem
             // 
@@ -205,29 +219,70 @@
             // binToolStripMenuItem1
             // 
             this.binToolStripMenuItem1.Name = "binToolStripMenuItem1";
-            this.binToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.binToolStripMenuItem1.Size = new System.Drawing.Size(91, 22);
             this.binToolStripMenuItem1.Text = "bin";
             this.binToolStripMenuItem1.Click += new System.EventHandler(this.binToolStripMenuItem1_Click);
-            // 
-            // txtToolStripMenuItem
-            // 
-            this.txtToolStripMenuItem.Name = "txtToolStripMenuItem";
-            this.txtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.txtToolStripMenuItem.Text = "txt";
-            this.txtToolStripMenuItem.Click += new System.EventHandler(this.txtToolStripMenuItem_Click);
             // 
             // txtToolStripMenuItem1
             // 
             this.txtToolStripMenuItem1.Name = "txtToolStripMenuItem1";
-            this.txtToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.txtToolStripMenuItem1.Size = new System.Drawing.Size(91, 22);
             this.txtToolStripMenuItem1.Text = "txt";
             this.txtToolStripMenuItem1.Click += new System.EventHandler(this.txtToolStripMenuItem1_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(41, 295);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(156, 23);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Matricol,
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(408, 295);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(314, 257);
+            this.listView1.TabIndex = 9;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // Matricol
+            // 
+            this.Matricol.Text = "Matricol";
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nume";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Prenume";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Medie";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Materii";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 668);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.tvStudenti);
             this.Controls.Add(this.lbMaterii);
@@ -277,6 +332,13 @@
         private System.Windows.Forms.ToolStripMenuItem binToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem txtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem txtToolStripMenuItem1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader Matricol;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
 
