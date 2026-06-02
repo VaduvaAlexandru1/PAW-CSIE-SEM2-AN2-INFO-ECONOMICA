@@ -1,0 +1,33 @@
+Iată textul extras integral din imaginea image_e1664c.jpg:
+
+(1p) Să se implementeze clasa Tranzactie pentru care se definesc atributele private:
+· idTranzactie – numeric întreg și constant | contIBAN – șir de caractere | detaliiTranzactie – șir de caractere | suma – numeric real | dataTranzactie.
+
+Pentru clasa Tranzactie se definesc constructor cu parametri și proprietăți.
+
+(1p) Se implementează clasa ExtrasCont cu atributele private:
+· numeClient – șir de caractere | adresa – șir de caractere | tranzactii – vector de elemente de tip Tranzactie
+
+Pentru clasa ExtrasCont se definesc constructor cu parametri, proprietăți pentru numeClient, 
+adresa și tranzactii, respectiv indexer [ ] pe vectorul de tranzacții.
+
+(2p) Să se construiască un formular ce permite inițializarea unui obiect de tip ExtrasCont. 
+Formularul trebuie să conțină controale vizuale simple pentru introducerea datelor. 
+Lista de tranzacții este citită dintr-un fișier text (minim 5 înregistrări), 
+iar asocierea tranzacțiilor la un extras de cont se face prin selecția acestora dintr-un ComboBox de pe formular. 
+Validarea inputului se face prin blocuri try-catch cu afișare de MessageBox-uri și controale de validare.
+
+(1p) Obiectele ExtrasCont create prin intermediul formularului de la punctul anterior se salvează 
+în aplicație într-o colecție standard (la alegere). La nivelul formularului principal, 
+extrasele sunt afișate prin intermediul unui control de tip ListView.
+
+(1p) Obiectele ExtrasCont afișate prin intermediul controlului ListView pot fi editate sau șterse 
+(inclusiv din colecție) cu ajutorul unui meniu contextual având două opțiuni (editare și ștergere) a elementului selectat.
+
+(1p) În clasa ExtrasCont se supraîncarcă operatorul 
+cast explicit la double pentru a returna media sumelor tranzacționate de un client în 
+decursul unei luni. Afișarea rezultatului se face într-un MessageBox la dublu click pe un element din ListView.
+
+(2p) Aplicația permite prin intermediul meniului principal, activarea opțiunii de salvare a extraselor de cont într-o baza de date. 
+Numele bazei de date și locația ei se considera cunoscute. 
+Extrasele sunt citite apoi din baza de date și afișate într-un formular secundar prin intermediul unui TextBox multiliniar.

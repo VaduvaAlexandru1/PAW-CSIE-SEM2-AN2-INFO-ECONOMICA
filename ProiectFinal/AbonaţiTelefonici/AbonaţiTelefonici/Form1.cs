@@ -22,9 +22,8 @@ namespace AbonaţiTelefonici
         List<ExtraOptiune> extraOptiuni = new List<ExtraOptiune>();
         Client clientCurent = null;
         string conn = @"Server=(localdb)\MSSQLLocalDB;Database=AbonatiDB;Trusted_Connection=True;";
-
+        Client clientPrinat = null;
         private PrintDocument printDocument = new PrintDocument();
-        private Client clientPrintat;
         public Form1()
         {
             InitializeComponent();
@@ -136,7 +135,7 @@ namespace AbonaţiTelefonici
                     c.TipAbonament = cbAbonamente.Items
                         .Cast<TipAbonament>()
                         .FirstOrDefault(x => x.Nume == tip)
-                        ?? new TipAbonament(tip, 0); // fallback safe
+                        ?? new TipAbonament(tip, 0); 
 
                     clienti.Add(c);
                 }
@@ -265,7 +264,7 @@ namespace AbonaţiTelefonici
             double abonCost = clientCurent.TipAbonament?.PretLunar ?? 0;
 
             tbExtraCost.Text = extraCost + " €";
-            tbTotal.Text = (extraCost + abonCost) + " €";
+            tbTotal.Text = clientCurent.CalculTotal() + " €";
         }
 
         private void txtToolStripMenuItem_Click(object sender, EventArgs e)

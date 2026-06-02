@@ -73,7 +73,6 @@
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientCurentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.btnDB = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClienti)).BeginInit();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -446,22 +445,11 @@
             this.chart1.TabIndex = 15;
             this.chart1.Text = "Venituri pe tip abonament";
             // 
-            // btnDB
-            // 
-            this.btnDB.Location = new System.Drawing.Point(30, 729);
-            this.btnDB.Name = "btnDB";
-            this.btnDB.Size = new System.Drawing.Size(75, 23);
-            this.btnDB.TabIndex = 16;
-            this.btnDB.Text = "test db";
-            this.btnDB.UseVisualStyleBackColor = true;
-            this.btnDB.Click += new System.EventHandler(this.btnDB_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 790);
-            this.Controls.Add(this.btnDB);
+            this.ClientSize = new System.Drawing.Size(1090, 745);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
@@ -547,7 +535,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientCurentToolStripMenuItem;
-        private System.Windows.Forms.Button btnDB;
     }
 }
 
